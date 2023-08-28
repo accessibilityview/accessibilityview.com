@@ -18,7 +18,7 @@ class SkywardHeader extends HTMLElement {
             <div class="usa-nav-container">
                 <div class="usa-navbar">
                     <div class="usa-logo" id="-logo">
-                        <em class="usa-logo__text"><a href="/" title="Section 508 Pro">Section 508 Pro</a></em>
+                        <em class="usa-logo__text"><a href="/" title="Accessibility View">Accessibility View</a></em>
                     </div>
                     <button type="button" class="usa-menu-btn">Menu</button>
                 </div>
@@ -40,7 +40,7 @@ class SkywardHeader extends HTMLElement {
                             <a href="/assessment.html" class="usa-nav-link"><span>Full Assessment</span></a>
                         </li>
                         <li class="usa-nav__primary-item">
-                            <a href="/about.html" class="usa-nav-link"><span>About Section 508 Pro</span></a>
+                            <a href="/about.html" class="usa-nav-link"><span>About Accessibility View</span></a>
                         </li>
                     </ul>
                     <!--
