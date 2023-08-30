@@ -1,102 +1,92 @@
-class AgencyNav extends HTMLElement{
-    constructor(){
-      super();
-    }
-  
-    connectedCallback(){      
-      this.appendChild(this.bodyBlock);
+class AgencyNav extends HTMLElement {
+    constructor() {
+        super();
     }
 
-    get bodyBlock(){
-      let bodyBlock = document.createElement('ul');
-      bodyBlock.classList.add("usa-sidenav__sublist");
+    connectedCallback() {
+        this.appendChild(this.bodyBlock);
+    }
 
-      bodyBlock.innerHTML = `
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=cns" id="cns">CNS - Corporation for National and Community Service (Americorps)</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=dhs" id="dhs">DHS - Department of Homeland Security</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=doc" id="doc">DOC - Department of Commerce</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=doe" id="doe">DOE - Department of Energy</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=doi" id="doi">DOI - Department of the Interior</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=doj" id="doj">DOJ - Department of Justice</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=dol" id="dol">DOL - Department of Labor</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=dot" id="dot">DOT - Department of Transportation</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=ed" id="ed">ED - Department of Education</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=eeoc" id="eeoc">EEOC - Equal Employment Opportunity Commission </a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=epa" id="epa">EPA - Environmental Protection Agency</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=fcc" id="fcc">FCC - Federal Communications Commission</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=fdic" id="fdic">FDIC - Federal Deposit Insurance Corporation</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=gsa" id="gsa">GSA - General Services Administration</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=hhs" id="hhs">HHS - Deparment of Health and Human Services</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=hud" id="hud">HUD - Department of Housing and Urban Development</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=nara" id="nara">NARA - National Archives and Records Administration</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=nrc" id="nrc">NRC - US Nuclear Regulatory Commission</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=nsf" id="nsf">NSF - National Science Foundation</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=opm" id="opm">OPM - Office of Personnel Management</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=pbgc" id="pbgc">PBGC - Pension Benefit Guaranty Corporation</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=sba" id="sba">SBA - Small Business Administration</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=ssa" id="ssa">SSA - Social Security Administration</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=state" id="state">State - Department of State</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=treasury" id="treasury">Treasury - Department of Treasury</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=usab" id="usab">USAB - US Access Board</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="view.html?website=usaid" id="usaid">USAID - US Agency of International Development</a>
-        </li>
+    get bodyBlock() {
+        let bodyBlock = document.createElement('ul');
+        bodyBlock.classList.add("usa-sidenav__sublist");
+
+        bodyBlock.innerHTML = `
+      <li class="usa-sidenav__item">
+      <a href="view.html?website=cda" id="cda">CDA - Department of Agriculture</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdoc" id="cdoc">CDOC - Department of Corrections</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdec" id="cdec">CDEC - Department of Early
+          Childhood</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cde" id="cde">CDE - Department of Education</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=hcpf" id="hcpf">HCPF - Department of Health Care
+          Policy and Financing</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdhe" id="cdhe">CDHE - Department of Higher
+          Education</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdhs" id="cdhs">CDHS - Department of Human
+          Services</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdle" id="cdle">CDLE - Department of Labor and
+          Employment</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=dola" id="dola">DOLA - Department of Local
+          Affairs</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=dmva" id="dmva">DMVA - Department of Military and
+          Veterans Affairs</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdnr" id="cdnr">CDNR - Department of Natural
+          Resources</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=dpa" id="dpa">DPA - Department of Personnel and
+          Administration</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdphe" id="cdphe">CDPHE - Department of Public Health
+          and Environment</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdps" id="cdps">CDPS - Department of Public
+          Safety</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=dora" id="dora">DORA - Department of Regulatory
+          Agencies</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=dor" id="dor">DOR - Department of Revenue</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=dos" id="dos">DOS - Department of State</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdot" id="cdot">CDOT - Department of
+          Transportation</a>
+  </li>
+  <li class="usa-sidenav__item">
+      <a href="view.html?website=cdt" id="cdt">CDT - Department of the Treasury</a>
+  </li>
+
       `;
-  
-      return bodyBlock;
+
+        return bodyBlock;
     }
-  }
-  
-  window.customElements.define('agency-nav', AgencyNav);
+}
+
+window.customElements.define('agency-nav', AgencyNav);
