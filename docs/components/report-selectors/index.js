@@ -1,17 +1,17 @@
-class ReportSelectors extends HTMLElement{
-    constructor(){
-      super();
-    }
-  
-    connectedCallback(){      
-      this.appendChild(this.bodyBlock);
+class ReportSelectors extends HTMLElement {
+    constructor() {
+        super();
     }
 
-    get bodyBlock(){
-      let bodyBlock = document.createElement('div');
-      let website = getQS("website");
+    connectedCallback() {
+        this.appendChild(this.bodyBlock);
+    }
 
-      bodyBlock.innerHTML = `
+    get bodyBlock() {
+        let bodyBlock = document.createElement('div');
+        let website = getQS("website");
+
+        bodyBlock.innerHTML = `
       <form id="reportSelector" name="reportSelector">
         <input type="hidden" value=${website} name="website">
 
@@ -24,7 +24,7 @@ class ReportSelectors extends HTMLElement{
 
           <label for="dateSelector">Date: </label>
           <select id="dateSelector" name="date">
-            <option value="2023-08-01">2023-08-01</option>
+            <option value="2023-08-29">2023-08-29</option>
           </select>
 
           <br>
@@ -36,18 +36,18 @@ class ReportSelectors extends HTMLElement{
 
         </form>
       `;
-  
-      return bodyBlock;
+
+        return bodyBlock;
     }
 
     /**
      * Get a value from the querystring
      */
-    getQS(key){
-      const querystring = new URLSearchParams(document.location.search);
-      return querystring.get(key);
+    getQS(key) {
+        const querystring = new URLSearchParams(document.location.search);
+        return querystring.get(key);
     }
-    
-  }
-  
-  window.customElements.define('report-selectors', ReportSelectors);
+
+}
+
+window.customElements.define('report-selectors', ReportSelectors);
