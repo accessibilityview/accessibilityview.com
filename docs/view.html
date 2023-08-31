@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View | Public Webpages | Section 508 Pro</title>
+    <title>View | Public Webpages | Accessibility View</title>
     <script src="assets/uswds/dist/js/uswds-init.min.js"></script>
     <link rel="stylesheet" href="assets/uswds/dist/css/uswds.min.css" />
 
@@ -135,7 +135,7 @@
          */
         function pageChanged(event) {
             // update wcagErrors and lighthouseErrors for current page
-            let errorsUrl = `https://accessibilityview.github.io/${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/reports/${document.forms.reportSelector.pageSelector.value}/a11y-errors.json`;
+            let errorsUrl = `https://accessibilityview.github.io/co-${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/reports/${document.forms.reportSelector.pageSelector.value}/a11y-errors.json`;
             fetchJsonWithUrl("jsonA11yErrors", errorsUrl);
 
         }
@@ -145,7 +145,7 @@
          * Update dateSelector based on value of typeSelector
          */
         function updateDateSelector() {
-            let datesUrl = `https://accessibilityview.github.io/${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/index.json`;
+            let datesUrl = `https://accessibilityview.github.io/co-${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/index.json`;
             fetch(datesUrl)
                 .then((response) => {
                     if (!response.ok) {
@@ -186,7 +186,7 @@
          * Update pageSelector based on values of typeSelector and dateSelector
          */
         function updatePageSelector() {
-            let pagesUrl = `https://accessibilityview.github.io/${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/ci-result.json`;
+            let pagesUrl = `https://accessibilityview.github.io/co-${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/ci-result.json`;
             fetch(pagesUrl)
                 .then((response) => {
                     if (!response.ok) {
@@ -212,7 +212,7 @@
                     });
 
                     // update wcagErrors and lighthouseErrors for /
-                    let errorsUrl = `https://accessibilityview.github.io/${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/reports/a11y-errors.json`;
+                    let errorsUrl = `https://accessibilityview.github.io/co-${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/reports/a11y-errors.json`;
                     fetchJsonWithUrl("jsonA11yErrors", errorsUrl);
                 })
                 .catch((err) => {
@@ -306,7 +306,7 @@
 
                 // update iframe with lighthouse html report
                 let lighthouseHtml = document.querySelector("#lighthouse-html");
-                let lighthouseHtmlUrl = `https://accessibilityview.github.io/${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/reports/${document.forms.reportSelector.pageSelector.value}/lighthouse.html`;
+                let lighthouseHtmlUrl = `https://accessibilityview.github.io/co-${getQS("website")}/reports/${document.forms.reportSelector.typeSelector.value}/${document.forms.reportSelector.dateSelector.value}/reports/${document.forms.reportSelector.pageSelector.value}/lighthouse.html`;
                 lighthouseHtml.src = lighthouseHtmlUrl;
             }
         }
@@ -371,7 +371,7 @@
             details.set("webpage", getQS("webpage") || "/");
 
             // baseUrl        
-            details.set("baseUrl", `https://accessibilityview.github.io/${website}`);
+            details.set("baseUrl", `https://accessibilityview.github.io/co-${website}`);
 
             // dateUrl 
             details.set("dateUrl", `${details.get("baseUrl")}/reports/${details.get("type")}/${details.get("date")}`);
