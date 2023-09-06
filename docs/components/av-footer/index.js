@@ -1,4 +1,4 @@
-class SkywardFooter extends HTMLElement {
+class AvFooter extends HTMLElement {
     constructor() {
         super();
     }
@@ -75,29 +75,21 @@ class SkywardFooter extends HTMLElement {
               usa-footer__logo
               grid-row
               mobile-lg:grid-col-6 mobile-lg:grid-gap-2
-            ">
+            ">                
                         <div class="mobile-lg:grid-col-auto">
-                            <img class="usa-footer__logo-img" src="/assets/img/skyward-logo.png"
-                                alt="Skyward IT Solutions" />
+                        <a href="https://thirstyhead.com">
+                            <img class="usa-footer__logo-img" src="/assets/img/candle.jpg"
+                                alt="ThirstyHead" />
+                        </a>
                         </div>
                         <div class="mobile-lg:grid-col-auto">
-                            <p class="usa-footer__logo-heading">Skyward IT Solutions</p>
+                            <p class="usa-footer__logo-heading">
+                                <a href="https://thirstyhead.com">ThirstyHead</a>
+                            </p>
                         </div>
+                
                     </div>
                     <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-                        <div class="usa-footer__social-links grid-row grid-gap-1">
-                            <div class="grid-col-auto">
-                                <a class="usa-social-link" href="https://twitter.com/skyward_it?lang=en"><img
-                                        class="usa-social-link__icon" src="/assets/uswds/img/usa-icons/twitter.svg"
-                                        alt="Twitter" /></a>
-                            </div>
-                            <div class="grid-col-auto">
-                                <a class="usa-social-link"
-                                    href="https://www.linkedin.com/company/skywarditsolutions/"><img
-                                        class="usa-social-link__icon" src="/assets/uswds/img/usa-icons/linkedin.svg"
-                                        alt="LinkedIn" /></a>
-                            </div>
-                        </div>
                         <p class="usa-footer__contact-heading">
                             Contact us
                         </p>
@@ -107,8 +99,7 @@ class SkywardFooter extends HTMLElement {
                                     
                                 </div>
                                 <div class="grid-col-auto">
-                                    <a href="tel:410-449-3003">(410) 449-3003</a><br>
-                                    <a href="mailto:info@skywarditsolutions.com">info@skywarditsolutions.com</a>
+                                    <a href="mailto:scott@thirstyhead.com">scott@thirstyhead.com</a>
                                 </div>
                             </div>
                         </address>
@@ -210,4 +201,4 @@ class SkywardFooter extends HTMLElement {
     }
 }
 
-window.customElements.define('skyward-footer', SkywardFooter);
+window.customElements.define('av-footer', AvFooter);
