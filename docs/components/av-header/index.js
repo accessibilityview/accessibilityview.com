@@ -1,4 +1,4 @@
-class SkywardHeader extends HTMLElement {
+class AvHeader extends HTMLElement {
     constructor() {
         super();
     }
@@ -65,4 +65,4 @@ class SkywardHeader extends HTMLElement {
     }
 }
 
-window.customElements.define('skyward-header', SkywardHeader);
+window.customElements.define('av-header', AvHeader);

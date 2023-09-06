@@ -16,9 +16,6 @@ class AgencyNav extends HTMLElement {
       <a href="view.html?website=cda" id="cda">CDA - Department of Agriculture</a>
   </li>
   <li class="usa-sidenav__item">
-      <a href="view.html?website=cdoc" id="cdoc">CDOC - Department of Corrections</a>
-  </li>
-  <li class="usa-sidenav__item">
       <a href="view.html?website=cdec" id="cdec">CDEC - Department of Early
           Childhood</a>
   </li>
@@ -52,10 +49,6 @@ class AgencyNav extends HTMLElement {
   <li class="usa-sidenav__item">
       <a href="view.html?website=cdnr" id="cdnr">CDNR - Department of Natural
           Resources</a>
-  </li>
-  <li class="usa-sidenav__item">
-      <a href="view.html?website=dpa" id="dpa">DPA - Department of Personnel and
-          Administration</a>
   </li>
   <li class="usa-sidenav__item">
       <a href="view.html?website=cdphe" id="cdphe">CDPHE - Department of Public Health
