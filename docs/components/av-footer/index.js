@@ -10,64 +10,18 @@ class AvFooter extends HTMLElement {
     get bodyBlock() {
         let bodyBlock = document.createElement('div');
         bodyBlock.innerHTML = `
+        <style>
+            .rounded{
+                border-radius: 50%;
+            }
+        </style>
+
         <footer class="usa-footer">
         <div class="grid-container usa-footer__return-to-top">
             <a href="#">Return to top</a>
         </div>
 
         <!-- footer nav-->
-        <!--
-    <div class="usa-footer__primary-section">
-      <nav class="usa-footer__nav" aria-label="Footer navigation">
-        <ul class="grid-row grid-gap">
-          <li
-            class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-          >
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-              >&lt;Primary link&gt;</a
-            >
-          </li>
-          <li
-            class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-          >
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-              >&lt;Primary link&gt;</a
-            >
-          </li>
-          <li
-            class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-          >
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-              >&lt;Primary link&gt;</a
-            >
-          </li>
-          <li
-            class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-          >
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-              >&lt;Primary link&gt;</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-    -->
         <div class="usa-footer__secondary-section">
             <div class="grid-container">
                 <div class="grid-row grid-gap">
@@ -77,14 +31,14 @@ class AvFooter extends HTMLElement {
               mobile-lg:grid-col-6 mobile-lg:grid-gap-2
             ">                
                         <div class="mobile-lg:grid-col-auto">
-                        <a href="https://thirstyhead.com">
-                            <img class="usa-footer__logo-img" src="/assets/img/candle.jpg"
-                                alt="ThirstyHead" />
+                        <a href="https://accessibilityview.com">
+                            <img class="usa-footer__logo-img rounded" src="/assets/img/av-logo4.png"
+                                alt="Accessibility View" />
                         </a>
                         </div>
                         <div class="mobile-lg:grid-col-auto">
                             <p class="usa-footer__logo-heading">
-                                <a href="https://thirstyhead.com">ThirstyHead</a>
+                                <a href="https://accessibilityview.com">Accessibility View</a>
                             </p>
                         </div>
                 
@@ -99,7 +53,7 @@ class AvFooter extends HTMLElement {
                                     
                                 </div>
                                 <div class="grid-col-auto">
-                                    <a href="mailto:scott@thirstyhead.com">scott@thirstyhead.com</a>
+                                    <a href="mailto:scott@accessibilityview.com">scott@accessibilityview.com</a>
                                 </div>
                             </div>
                         </address>
